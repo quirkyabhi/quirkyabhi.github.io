@@ -1,0 +1,9 @@
+body{
+    /* background-color:aliceblue; */
+    /* background-image: radial-gradient( black, red)  , url(https://cdn.designbyhumans.com/file/module/store/728/88728/hero/5287292.jpg); */
+    background:url(https://cdn.designbyhumans.com/file/module/store/728/88728/hero/5287292.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}

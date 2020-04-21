@@ -1,0 +1,14 @@
+.nav-info{
+    /* color: aliceblue; */
+    background: rgb(0,212,255);
+    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(1,76,115,1) 95%);
+}
+.jumbotron{
+    background: rgb(0,212,255); !important
+    background: radial-gradient(circle,  rgba(1,76,115,1) 95% ,rgba(0,212,255,1) 0%);!important
+
+}
+.image{
+    background-size: cover;
+    padding: 0%;
+}
