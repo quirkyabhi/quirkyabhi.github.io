@@ -509,6 +509,10 @@ background: radial-gradient(circle, rgba(14,232,215,1) 0%, rgba(1,138,233,0.9500
   opacity:1;filter:"alpha(opacity=100)";
   -ms-filter:"alpha(opacity=100)";
 }
+.shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
 html,body{
   /* background-color: #eaeded; */
   /* background-color: #d3f0f0; */
