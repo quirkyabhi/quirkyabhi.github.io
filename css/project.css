@@ -11,6 +11,10 @@
 /* body{
   overflow: visible;
 } */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
 .modal{
   position: fixed;
   top: 50%;
@@ -136,8 +140,16 @@
 .header {
   overflow: hidden;
   background-color:#FCEBED;
+  /* background-color: #0cbaba; */
+/* background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%); */
   /* background-color:#F4F7FF; */
   text-align: center;
+  letter-spacing: 1px;
+  /* color: rgba(7, 7, 7, 0.705); */
+  text-transform: uppercase !important;
+  font-family: 'Girassol', cursive !important;
+   /* font-family: 'Roboto', sans-serif; */
+
   /* background-color: #0b6599; */
   /* background: rgb(14,232,215);
 background: radial-gradient(circle, rgba(14,232,215,1) 0%, rgba(1,138,233,0.9500175070028011) 100%); */
@@ -145,6 +157,7 @@ background: radial-gradient(circle, rgba(14,232,215,1) 0%, rgba(1,138,233,0.9500
 background: radial-gradient(circle, rgba(14,232,215,1) 0%, rgba(1,138,233,0.3533788515406162) 100%);   */
 padding: 5px 5px;
 }
+
 
 /* Style the header links */
 .header a {
@@ -160,8 +173,11 @@ padding: 5px 5px;
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 45px;
+ 
+  /* font-family: 'Merriweather', serif !important; */
+  
+  text-transform: uppercase !important;
 }
 
 /* Change the background color on mouse-over */
@@ -348,7 +364,9 @@ padding: 5px 5px;
     /* font-family: 'Vast Shadow', cursive; */
     /* font-family: 'Shojumaru', cursive; */
     /* font-family: 'Faster One', cursive; */
-    font-weight: bolder; 
+    /* font-family: 'Girassol', cursive; */
+    font-weight: 500;
+    opacity: 90%;
   }
   .owl-item img {
     display: block;
