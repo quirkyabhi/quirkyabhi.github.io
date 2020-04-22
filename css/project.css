@@ -9,8 +9,10 @@
     /* opacity: 90%; 
 }*/
 /* body{
-  overflow: visible;
+  overflow: hidden;
 } */
+
+/* scroll problem */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
@@ -33,6 +35,7 @@
   top: 0;
   left: 0;
   padding: 10px;
+  /* margin-right: unset; */
    /* background:#0e1e5c; */
   /* background: radial-gradient(circle, rgb(47, 46, 128) 5%, rgb(0, 8, 12) 85%); */
   background: radial-gradient(circle,  #0e1e5c 5%, rgb(0, 8, 12) 85%);
@@ -53,11 +56,6 @@
   
 
    /* opacity: 90%;   */
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 .toppp{
   z-index:9;
@@ -303,13 +301,14 @@ padding: 5px 5px;
 }
 
 
-/* body,html{
+ body,html{
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-  background: #e74c3c !important;
-  } */
+  overflow: hidden;
+  /* background: #e74c3c !important; */
+  } 
 .search-pad{
   width: auto;
 }
