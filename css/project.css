@@ -63,6 +63,8 @@
 }
 .topppp{
   top: 64px;
+  background: radial-gradient(circle,  #0e1e5c 5%, rgb(0, 8, 12) 85%);
+
   z-index: 8;
 }
 .topp.scrolled {
