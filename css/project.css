@@ -54,6 +54,11 @@
 
    /* opacity: 90%;   */
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .toppp{
   z-index:9;
   /* position: sticky; */
