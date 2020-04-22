@@ -302,7 +302,7 @@ padding: 5px 5px;
 
 
  body,html{
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -481,7 +481,7 @@ padding: 5px 5px;
 /* scroll */
 #scroll {
   /* overflow-x: unset; */
-  display: block !important;
+  /* display: block !important; */
   position:fixed;
   right:10px;
   bottom:10px;
@@ -529,7 +529,7 @@ html,body{
   /* background-color: #d3f0f0; */
   background-color: #eeeeee;
   /* background-color: #0a0a0a; */
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   /* padding: 0;
   margin: 0; */
@@ -543,3 +543,31 @@ html,body{
     body { padding-top: 0px; }
 } */
 
+/* parallax */
+.block{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+}
+.block h2{
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  font-size: 10vw;
+  color: white;
+  font-weight: 400;
+}
+.img-parallax {
+  width: 100vmax;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  pointer-events: none
+}
