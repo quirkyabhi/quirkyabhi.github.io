@@ -50,7 +50,7 @@
   padding-right: 0rem;
    /* background:#0e1e5c; */
   /* background: radial-gradient(circle, rgb(47, 46, 128) 5%, rgb(0, 8, 12) 85%); */
-  background: radial-gradient(circle,  #0e1e5c 5%, rgb(0, 8, 12) 85%);
+  
 
    /* opacity: 90%;   */
 }
@@ -58,6 +58,7 @@
   z-index:9;
   /* position: sticky; */
   position: sticky;
+  background: radial-gradient(circle,  #0e1e5c 5%, rgb(0, 8, 12) 85%);
   /* position: relative; */
 }
 .topppp{
