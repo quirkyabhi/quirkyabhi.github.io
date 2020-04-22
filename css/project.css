@@ -306,7 +306,8 @@ padding: 5px 5px;
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-x: hidden;
   /* background: #e74c3c !important; */
   } 
 .search-pad{
