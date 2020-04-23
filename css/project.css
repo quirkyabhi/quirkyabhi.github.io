@@ -226,7 +226,9 @@ padding: 5px 5px;
   }
 }
 
-
+.cart-size{
+  height: 30% !important;
+}
 .footer-bs {
     /* background-color: #3c3d41; */
     background-color: #0e1e5c;
