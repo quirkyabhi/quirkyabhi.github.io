@@ -553,6 +553,7 @@ html,body{
 }
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 .block h2{
+  z-index: 2;
   position: relative;
   display: block;
   text-align: center;
@@ -582,7 +583,7 @@ html,body{
 
 .img-parallax {
   width: 100vmax;
-  /* z-index: 1; */
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 50%;
