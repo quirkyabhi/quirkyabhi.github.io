@@ -72,3 +72,78 @@ function clickk() {
     }
     
 }
+
+function animateValue(id, start, end, duration) {
+    // assumes integer values for start and end
+    
+    var obj = document.getElementById(id);
+    var range = end - start;
+    // no timer shorter than 50ms (not really visible any way)
+    var minTimer = 50;
+    // calc step time to show all interediate values
+    var stepTime = Math.abs(Math.floor(duration / range));
+    
+    // never go below minTimer
+    stepTime = Math.max(stepTime, minTimer);
+    
+    // get current time and calculate desired end time
+    var startTime = new Date().getTime();
+    var endTime = startTime + duration;
+    var timer;
+  
+    function run() {
+        var now = new Date().getTime();
+        var remaining = Math.max((endTime - now) / duration, 0);
+        var value = Math.round(end - (remaining * range));
+        obj.innerHTML = value + " +";
+        if (value == end) {
+            clearInterval(timer);
+        }
+    }
+    
+    timer = setInterval(run, stepTime);
+    run();
+}
+// function counter(counterr) {
+//     var idd= counterr.id;
+//     if (idd=="customercount") {
+//         animateValue(idd, 0, 99999, 5000);
+//     }
+//     if (idd=="sellercount") {
+//         animateValue(idd, 0, 9999, 5000);
+//     }
+//     if (idd=="partnercount") {
+//         animateValue(idd, 0, 999, 5000);
+//     }
+// }
+function counter() {
+        animateValue("customercount", 0, 99999, 5000);
+    
+        animateValue("sellercount", 0, 9999, 5000);
+    
+        animateValue("partnercount", 0, 999, 5000);
+}
+
+
+// counter trigger
+
+var element_position = $('#scroll-to').offset().top;
+var screen_height = $(window).height();
+var activation_offset = 0.5;//determines how far up the the page the element needs to be before triggering the function
+var activation_point = element_position - (screen_height * activation_offset);
+var max_scroll_height = $('body').height() - screen_height - 5;//-5 for a little bit of buffer
+
+//Does something when user scrolls to it OR
+//Does it when user has reached the bottom of the page and hasn't triggered the function yet
+$(window).on('scroll', function() {
+    var y_scroll_pos = window.pageYOffset;
+
+    var element_in_view = y_scroll_pos > activation_point;
+    var has_reached_bottom_of_page = max_scroll_height <= y_scroll_pos && !element_in_view;
+
+    if(element_in_view || has_reached_bottom_of_page) {
+        //Do something
+        counter();
+    }
+});
+
