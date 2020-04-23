@@ -117,11 +117,11 @@ function animateValue(id, start, end, duration) {
 //     }
 // }
 function counter() {
-        animateValue("customercount", 0, 99999, 5000);
+        animateValue("customercount", 0, 8374, 5000);
     
-        animateValue("sellercount", 0, 9999, 5000);
+        animateValue("sellercount", 0, 472, 5000);
     
-        animateValue("partnercount", 0, 999, 5000);
+        animateValue("partnercount", 0, 37, 5000);
 }
 
 
