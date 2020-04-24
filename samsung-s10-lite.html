@@ -26,14 +26,13 @@
     <nav id="header" class="navbar navbar-dark nav-info navbar-expand-md">
         <div class="container-fluid topp">
         <!-- <div class="container"> -->
-            
-            <a href="#" class="navbar navbar-brand pull-left animated zoomIn "><img class="logosize" src="images/cartlogow.png"></a>
-            <a href="#" class="navbar navbar-brand animated zoomIn">uKart</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar01">
+            <button class="navbar-toggler pull-left" data-toggle="collapse" data-target="#navbar01">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="container container-sm contain-to-grid search-pad h-100 animated zoomIn ">
+            <a href="#" class="navbar navbar-brand  animated zoomIn "><img class="logosize" src="images/cartlogow.png"></a>
+            <a href="#" class="navbar navbar-brand animated zoomIn">uKart</a>
+            
+            <div class="container search-pad animated zoomIn ">
                 <div class="d-flex justify-content-center h-100">
                   <div class="searchbar">
                     <input class="search_input" type="text" name="" placeholder="Search...">
@@ -42,25 +41,26 @@
                 </div>
               </div>
 
+
             <div class="collapse navbar-collapse" id="navbar01">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ">
-                            <a href="#header" class="anchor-element nav-link animated zoomIn faa-parent animated-hover  "><i class=" faa-pulse  fa fa-home " aria-hidden="true"></i> Home </a>
+                        <li class="nav-item pl-2">
+                            <a href="index.html" class=" nav-link animated zoomIn faa-parent animated-hover  "><i class=" faa-pulse  fa fa-home " aria-hidden="true"></i> Home </a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item pl-2">
                             <a href="#footer" class="anchor-element nav-link animated zoomIn faa-parent animated-hover"><i class="faa-pulse  fa fa-info " aria-hidden="true"></i> About</a>
                         </li>
                      
-                        <li class="nav-item ">
+                        <li class="nav-item pl-2">
                             <a href="itemlist.html" class="nav-link animated zoomIn faa-parent animated-hover"><i class="faa-pulse fa fa-product-hunt "></i> Our Products</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item pl-2">
                             <a href="#footer" class="anchor-element nav-link animated zoomIn faa-parent animated-hover"><i class="faa-pulse fa fa-phone "></i> Contact</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item pl-2">
                             <a href="#" class="anchor-element nav-link animated zoomIn faa-parent animated-hover"><i class="faa-pulse fa fa-shopping-cart" aria-hidden="true"></i> Cart</a>
                         </li>
-                        <li class="nav-item dropdown" >
+                        <li class="nav-item dropdown pl-2" >
                             <a href="#loginModal" data-toggle="modal" class="nav-link dropdown-toggle animated zoomIn faa-parent animated-hover" role="button" id="dropdownMenuLink" data-toggle="dropdown" area-haspopup="true"><i class="faa-pulse fa fa-user"></i> Login</a>
                             <div class="dropdown-menu dropdown-menu-right mt-0 " aria-labelledby="dropdownMenuLink">
                                 <a href="#signupModal" data-toggle="modal" class=" dropdown-item-text"> New Customer??<span class=" btn-link ml-5">Sign-in</span> </a>
@@ -71,10 +71,31 @@
                             </div>
 
                         </li>
+                        <li class="nav-item d-md-none d-block pl-2">
+                            <a href="itemlist.html" id="todaysdealslink3" onclick="trigger(this);" class=" nav-link animated zoomIn faa-parent animated-hover  "><i class=" faa-pulse  fa fa-hourglass-end " aria-hidden="true"></i> Today's Deals </a>
+                        </li>
+                        <li class="nav-item d-md-none d-block pl-2">
+                            <a href="itemlist.html" id="bestsellerslink1" onclick="trigger(this);" class=" nav-link animated zoomIn faa-parent animated-hover  "><i class=" faa-pulse  fa fa-globe " aria-hidden="true"></i> Best sellers </a>
+                        </li>
+                        <li class="nav-item d-md-none d-block pl-2">
+                            <a href="itemlist.html" onclick="trigger(this);" id="newreleaseslink1" class=" nav-link animated zoomIn faa-parent animated-hover  "><i class=" faa-pulse  fa fa-bolt" aria-hidden="true"></i> New releases </a>
+                        </li>
+                        <li class="nav-item d-md-none d-block pl-2">
+                            <a href="itemlist.html" id="electronicslink1" onclick="trigger(this);" class=" nav-link animated zoomIn faa-parent animated-hover"><i class="faa-pulse  fa fa-laptop " aria-hidden="true"></i> Electronics</a>
+                        </li>
+                     
+                        <li class="nav-item d-md-none d-block pl-2">
+                            <a href="itemlist.html" id="grocerieslink1" onclick="trigger(this);" class=" nav-link animated zoomIn faa-parent animated-hover"><i class="faa-pulse fa fa-shopping-basket "></i> Groceries</a>
+                        </li>
+                        <li class="nav-item d-md-none d-block pl-2">
+                            <a href="itemlist.html" id="clothinglink1" onclick="trigger(this);" class=" nav-link animated zoomIn faa-parent animated-hover"> <i class="faa-pulse fa fa-shopping-bag" aria-hidden="true"></i> Clothing</a>
+                        </li>
+                        <li class="nav-item d-md-none d-block pl-2">
+                            <a href="itemlist.html" id="bookslink1" onclick="trigger(this);" class=" nav-link animated zoomIn faa-parent animated-hover"><i class="faa-pulse fa fa-book " aria-hidden="true"></i> Books</a>
+                        </li>
                     </ul>
             </div>
         </div>
-        
     </nav>
     <nav class="navbar navbar-dark pt-0 nav-info topppp navbar-expand-lg">
         <div class="container-fluid  ">
