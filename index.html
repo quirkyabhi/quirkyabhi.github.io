@@ -2351,6 +2351,15 @@ scroll: function () {
 });
 });
 </script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script>
+    var waypoint = new Waypoint({
+  element: document.getElementById('scroll-to'),
+  handler: function(direction) {
+    counter();
+  }
+})
+</script>
 
     
 </body>
