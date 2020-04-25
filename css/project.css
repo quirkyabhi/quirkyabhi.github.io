@@ -604,3 +604,8 @@ html,body{
   padding-top: 10px;
 
 }
+.product-price{
+  font-weight: 500;
+  font-size: 30px;
+  text-shadow: 2px 2px 8px rgb(56, 49, 49) ;
+}
